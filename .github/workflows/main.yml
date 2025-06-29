@@ -1,6 +1,9 @@
 name: Check Python Script
 
-on: [push]
+on:
+  push:
+    branches:
+      - ''
 
 jobs:
   run-python:
@@ -10,15 +13,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Check Python version
-      run: python --version
-
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
 
-      
+    - name: Verify Python installed
+      run: |
+        which python
+        which python3
+        python --version
+        python3 --version
 
     - name: Run Python script
-      run: python task.py 
+      run: python3 task.py
