@@ -22,8 +22,6 @@ jobs:
       run: |
         which python
         which python3
-        python --version
-        python3 --version
-
+        
     - name: Run Python script
       run: python3 task.py
