@@ -23,5 +23,6 @@ jobs:
         which python
         which python3
         
+
     - name: Run Python script
-      run: python3 task.py
+      run: python3 script.py
