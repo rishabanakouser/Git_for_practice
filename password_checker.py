@@ -4,7 +4,7 @@ class Task:
         self.priority = priority  # 1 (High), 2 (Medium), 3 (Low)
 
     def __str__(self):
-        priority_labels = {1: "High", 2: "Medium", 3: "Low"}
+        priority_labels = {1: "P1", 2: "P2", 3: "P3"}
         return f"{self.name} [Priority: {priority_labels.get(self.priority, 'Unknown')}]"
 
 
