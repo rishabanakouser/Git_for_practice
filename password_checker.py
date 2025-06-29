@@ -1,7 +1,7 @@
 class Task:
     def __init__(self, name, priority):
         self.name = name
-        self.priority = priority  # 1 (High), 2 (Medium), 3 (Low)
+        self.priority = priority  # 1 (P1), 2 (P2), 3 (P3)
 
     def __str__(self):
         priority_labels = {1: "P1", 2: "P2", 3: "P3"}
